@@ -1,10 +1,11 @@
 import '../Estilos/EntradaTareas.css';
 
-const EntradaTareas = ()=>{
+const EntradaTareas = ({ handleChange })=>{
   return(
     <input 
       className='input'
       placeholder='write an assignment'
+      onChange={handleChange}
     >
     </input>
   )

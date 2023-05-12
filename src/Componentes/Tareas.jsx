@@ -1,9 +1,9 @@
 import '../Estilos/Tareas.css';
 
-const Tareas = ()=>{
+const Tareas = ({ tarea })=>{
   return(
     <div className='contenedor__tareas'>
-        <p>Ir a caminar en la playa</p>
+        <p>{tarea}</p>
         <button>X</button>
     </div>
   )

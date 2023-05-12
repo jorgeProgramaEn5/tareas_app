@@ -1,9 +1,10 @@
 import '../Estilos/BtnAgregar.css';
 
-const BtnAgregar = ()=>{
+const BtnAgregar = ({manejarClick})=>{
   return(
     <button 
       className='btn'
+      onClick={manejarClick}
     >
     AGGREGATE
     </button>
