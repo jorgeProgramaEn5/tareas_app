@@ -6,8 +6,6 @@ import Tareas from './Tareas';
 import { useState } from 'react';
 
 const App_tareas = ()=>{
-
-	let tareas = [];
 	
 	let [valorInput, setValorInput] = useState('');
 	
@@ -16,8 +14,7 @@ const App_tareas = ()=>{
 	}
 
 	const manejarClick =()=>{
-		tareas.push(valorInput);
-		console.log(tareas);
+		console.log(valorInput);
 	}
 
 	return (
@@ -28,20 +25,9 @@ const App_tareas = ()=>{
 				<BtnAgregar manejarClick={manejarClick}/>
 			</div>
 			<div className='contenedor__list'>
-			{
-	  			tareas.map((i) => { 
-	  				return (
-	  					<Tareas 
-						tarea={tareas[i]}
-	  					// key={robots[i].id} 
-	  					// id={robots[i].id} 
-	  					// name={robots[i].name} 
-	  					// username={robots[i].username} 
-	  					// email={robots[i].email}
-	  					/>
-	  				)
-	  			})
-	  		}
+	  			<Tareas 
+					tarea={valorInput}
+	  			/>
 			</div>
 
 		</div>
