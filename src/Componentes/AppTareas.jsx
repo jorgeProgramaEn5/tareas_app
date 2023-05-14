@@ -29,15 +29,15 @@ const App_tareas = ()=>{
 			</div>
 			<div className='contenedor__list'>
 			{
-	  			tareas.map((i) => { 
+	  			tareas.map((items) => { 
 	  				return (
 	  					<Tareas 
-						tarea={tareas[i]}
-	  					// key={robots[i].id} 
-	  					// id={robots[i].id} 
-	  					// name={robots[i].name} 
-	  					// username={robots[i].username} 
-	  					// email={robots[i].email}
+                tarea={items}
+                key={items.id} 
+                id={items.id} 
+                name={items.name} 
+                username={items.username} 
+                email={items.email}
 	  					/>
 	  				)
 	  			})
