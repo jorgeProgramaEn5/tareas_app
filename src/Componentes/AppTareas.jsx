@@ -29,18 +29,18 @@ const App_tareas = ()=>{
 			</div>
 			<div className='contenedor__list'>
 			{
-	  			tareas.map((items) => { 
-	  				return (
-	  					<Tareas 
-                tarea={items}
-                key={items.id} 
-                id={items.id} 
-                name={items.name} 
-                username={items.username} 
-                email={items.email}
-	  					/>
-	  				)
-	  			})
+	  			// tareas.map((items) => { 
+	  			// 	return (
+	  			// 		<Tareas 
+          //       tarea={items}
+          //       key={items.id} 
+          //       id={items.id} 
+          //       name={items.name} 
+          //       username={items.username} 
+          //       email={items.email}
+	  			// 		/>
+	  			// 	)
+	  			// })
 	  		}
 			</div>
 
